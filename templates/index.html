@@ -1,0 +1,321 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Vacations UK Ltd.</title>
+    <link rel="shortcut icon" type="image/jpg" href="{% static 'images\logo.jpg' %}"/> 
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+  </head>
+ 
+  
+  <body>
+
+    <header>
+      <header>
+        <div class="logo">
+          <a href="#"><img src="{% static 'images/logo.jpg' %}" alt="logo" /></a>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#destinations">Offers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+
+    <div class="sticky-phone">
+      <p>Our 24x7 available travel consultants are always here to maintain the quality
+         of the company. Contact us at <span  class="phone-no">555-145-4567</span> for more information.</p>
+    </div>
+
+
+    <div>
+      <section class="hero">
+        <div class="hero-image">
+          <img src="{% static 'images/plane.jpg' %}" alt="Hero image" />
+        </div>
+       
+        <div class="hero-content">
+          <h1>Discover the World <h2 style="color:#fffb00;"> Your Passport to Adventure!</h2></h1>
+          <p>You can contact us to get the lowest possible prices available, lock it out today and 
+            pay with your easiest plans.
+            We can get you the offers available throughout the globe so book now</p>
+          <a href="#contact" class="hero-button">Inquire Now</a>
+        </div>
+      </section>
+
+
+      <!-- Destinations -->
+      <section id="destinations" class="destinations">
+        <h2>Cheapest Offers and Perfect Savings</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="{% static 'images/emirates.jpeg' %}" alt="" class="enlarge-on-hover" />
+            <span class="discount-badge">Upto 20% off</span>
+            <h4>Emirates PROMO Offers</h4>
+            <br>
+            <p>
+              Up to 20% Off Emirates prices from United Kingdom to anywhere in Asia.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="{% static 'images/qatar.jpg' %}" alt="" class="enlarge-on-hover" />
+            <span class="discount-badge">Exclusive</span>
+            <br>
+            <h4>Qatar PROMO Offers</h4>
+            <br>
+            <p>
+              Upto 20% off on direct flights.
+              Upto 30% off on Asian flights from UK
+              Limited Offer
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="{% static 'images/gulf.jpg' %}" alt="" class="enlarge-on-hover" />
+            <span class="discount-badge">Flat 15% off</span>
+            <h4>Gulf PROMO offers</h4>
+            <br>
+            <p>
+              Get 15% flat off with Gulf Air 
+              Call our landline or speak to travel consultant
+              to avail the offer.
+            </p>
+          </div>
+        </div>
+      </section>
+    
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="feat bg-gray pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="section-head col-sm-12">
+          <h4><span>Why Choose</span> Us?</h4>
+          <p>When you choose us, you'll feel the benefit of our more than 10 year's experience. Because we know how to handle it.
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-phone"></i></span>
+            <h4>Dedicated support</h4>
+            <p>Get Yourself a customized price a lot lower than market calling a direct landline number. Also If our customer has any problem and any query we are always happy to help them.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-money"></i></span>
+            <h4>Lowest Prices</h4>
+            <p>We are working with top leading airlines in manners to cover the protection plus we got a broker as
+               well so we can evaluate the lowest possible prices for you...</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_three"><i class="fa fa-hourglass-half"></i></span>
+            <h4>Previlege Club</h4>
+            <p>Introducing you to a world of unmatched rewards. Become one of our valued members to enjoy a variety of exclusive benefits that will elevate your experience on board and beyond.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
+            <h4>Reliable and Secure Deals</h4>
+            <p>We are always having a prices which suits your lowest budget as well if still have a problem put a small amount of deposit today GBP 100 Pp and pay rest in 2 week time or as concerned with our consultant so you can go for any trip in your mind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+        <div class="testimonials">
+          <div class="inner">
+            <h1>What travellors say</h1>
+            <div class="border"></div>
+    
+            <div class="row">
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'images/p2.png' %}" alt="">
+                  <div class="name">Ivan Valentina</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+    
+                  <p>
+I recently booked a trip through this incredible travel website, and it was an absolute 
+dream! The booking process was smooth and hassle-free
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'images/p1.png' %}" alt="">
+                  <div class="name">Devin Adam</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+    
+                  <p>
+                    The prices offered were unbelievably low, and I couldn't believe my luck! I had been
+                     searching for budget-friendly options for my upcoming trip,
+                     and this website delivered beyond my expectations.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col">
+                <div class="testimonial">
+                  <img src="{% static 'images/p5.jpg' %}" alt="">
+                  <div class="name">Sara Marco</div>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+    
+                  <p>
+                    Had the best experience. It's like having a personal travel agent at your fingertips.
+                     I've booked multiple trips through them, and each experience has been phenomenal.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+
+
+
+      <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <p style="color:#666; font-family: Dongle-regular; font-size: 18px;">
+            If you have any questions or would like to book a trip, please fill
+            out the form below or contact us using the information provided.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>Carnival House, 100 Harbour Parade, Southampton, Hampshire,
+              SO15 1ST
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:info@travelcompany.com"
+                >info@seavacations.co.uk</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i
+              ><a href="tel:555-123-4567">555-145-4567</a>
+            </li>
+          </ul>
+        </div>
+        <form method="post" action="{% url 'saveenquiry' %}" class="form">
+          {% csrf_token %}
+          <div class="form-group">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="Enter Your Phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+
+      <div class="contact-info">
+        <h2>Need Help for your travel & tours consulting?</h2>
+        <h4 style="color:#666; font-family: Dongle-regular; font-size: 20px;">Our 24x7 available travel consultants are always here to maintain the quality of the company, so feel free to call us!</h4>
+        <div class="animated-phone">
+          <p class="phone-number">012-9369-9555</p>
+        </div>
+      </div>
+
+      <script>
+        window.GPTTConfig = {
+          uuid: "bbbcae0c1c954297814abf67e02af63a",
+        }
+      </script>
+      <script
+        src="https://app.gpt-trainer.com/widget-asset.js"
+        defer>
+      </script>
+      
+
+      <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <pre> <p>Since 1995 we are covered and ATOL insured company involved in travel & tours activities.
+                                                        ATOL# TRA9711066</p> </pre>
+        <p>&copy; 2023 Travel Website. All Rights Reserved.</p>
+      </footer> 
+     
+    </main>
+ 
+  </body>
+  <script
+    src="https://kit.fontawesome.com/6558443b63.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

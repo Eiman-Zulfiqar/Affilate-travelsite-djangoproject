@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sea Vacations UK Ltd.</title>
+<link rel="shortcut icon" type="image/jpg" href="{% static 'images\logo.jpg' %}"/> 
+<link rel="stylesheet" href="{% static '/css/style.css' %}" />
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+}
+
+
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 30px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+.about {
+  padding: 20px;
+  position: relative; /* Add this to make sure the buttons are positioned correctly */
+
+}
+
+
+.about p {
+  font-family: "Dongle-regular";
+  font-size: 24px;
+  line-height: 1.3;
+  color: #666; /* Paragraph text color */
+}
+
+.about-content {
+  position: relative; /* Add this to ensure the buttons are relative to this container */
+}
+
+.extra-content {
+  display: none; /* Initially hide the extra content */
+  margin-top: 10px; /* Add some space between the paragraph and extra content */
+}
+
+.read-more,
+.read-less {
+  position: absolute; /* Position the buttons absolutely within the .about-content div */
+  bottom: -35px; /* Position the buttons at the bottom of the .about-content div */
+  left: 50%; /* Position the buttons in the center */
+  transform: translate(-50%, 50%); /* Center the buttons horizontally and adjust vertically */
+  cursor: pointer;
+  background-color: #ff7f50; /* Button color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  font-family: "Dongle-light";
+}
+
+.read-less {
+  display: none; /* Initially hide the "Read Less" button */
+}
+
+.about{
+  text-align: center;
+  padding: 150px;
+}
+.about h3{
+ font-family: "Dongle-bold";
+ font-size: 2rem;
+}
+.about p{
+  font-family: "Dongle-regular";
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: 40px;
+  
+}
+.about{
+  padding: 0 30px;
+}
+
+.header{
+  display: flex;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  align-items: center;
+}
+.logo img{
+  max-width: 15%;
+}
+
+</style>
+</head>
+<body>
+
+    <header><div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static 'images/logo.jpg' %}" alt="logo" /></a>
+      </div></header>
+      <div class="sticky-phone">
+        <p>Our 24x7 available travel consultants are always here to maintain the quality of the company. Contact us at <span  class="phone-no">123-456-7890</span> for more information.</p>
+      </div>
+
+<br>
+<section id="about" class="about">
+  <div class="about-content">
+  <h3>About Us</h3>
+  <p>
+    We are an online travel agency which holds the licensed not to entertain but to perform a proper business so our clients will stay at safe hands our 24x7 customer support is for our business so everything is taking care at the time.
+Our main frame is to help people to get social fares for their flights and will up help with the cheapest availability as well.
+Our company will get you the benefits in order to get us referral so will do a proper business with you in order to get you the low-cost fares plus we are offering the Que mileage card with all top leading airline so every trip with us allow you to determine some of new upcoming discounts and vouchers for future trips so you will come to know then how we are getting a way cheaper than market.
+We will allow you to become a part of newmarket transport travel ltd and get yourself and your family a handsome discount for your next vacations.
+</p> <div class="extra-content" id="extraContent"> <p>Air fares always keeps on changing so let us get your info once we get the cheapest prices as per your need will be in touch will keep you in pipeline of promotions going on at the time of traveling dates so you won't even miss a single cheapest availability.
+For business class senior citizen travelers will get COD (cash on delivery) services as well on which the client has to pay minimum 65% amount before the shipment and rest can be paid once the E-Ticket received.
+Since 1995 we have won more than 109 awards to deal people as best air fare selling company around the globe.
+More than 120k clients are our returning assets so we always welcome every single one with the hassle free services.</p>
+
+  </div>
+
+  <button class="read-more" id="readMoreBtn">Read More</button>
+<button class="read-less" id="readLessBtn">Read Less</button>
+</div>
+</section>
+
+<br>
+<br>
+<h2 style="text-align:center; padding-top: 50px">Analysis of Financial Payments</h2>
+<p style="text-align:center">Choose your Plan wisely.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">£100 Per Person</li>
+    <li>Pay GBP 100 Pp</li>
+    <li>For More Than 3 Travelers Offer</li>
+    <li>Pay Rest Within Week Time</li>
+    <li>Deposit Refundable</li>
+    <li class="grey"><a href="tel:+1234567890" class="button">Inquire</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:hsl(213, 95%, 54%)">Group</li>
+    <li class="grey">£300 Per Personr</li>
+    <li>Pay GBP 300 Pp</li>
+    <li>For More Than 7 Travelers Offer</li>
+    <li>Pay Rest Within Week Time</li>
+    <li>Deposit Refundable</li>
+    <li class="grey"><a href="tel:+1234567890" class="button">Inquire</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">£100 Per Personn</li>
+    <li>For More Than 5 Travelers Offer</li>
+    <li>Pay Rest Within 48 Hours</li>
+    <li>25% Discount Worldwide</li>
+    <li>Book Now Pay Later</li>
+    <li class="grey"><a href="tel:+1234567890" class="button">Inquire</a></li>
+  </ul>
+</div>
+<br>
+<br>
+
+
+<script>
+  window.GPTTConfig = {
+    uuid: "bbbcae0c1c954297814abf67e02af63a",
+  }
+</script>
+<script
+  src="https://app.gpt-trainer.com/widget-asset.js"
+  defer>
+</script>
+
+
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/" target="_blank"
+      ><i class="fab fa-facebook"></i
+    ></a>
+    <a href="https://www.twitter.com/" target="_blank"
+      ><i class="fab fa-twitter"></i
+    ></a>
+    <a href="https://www.instagram.com/" target="_blank"
+      ><i class="fab fa-instagram"></i
+    ></a>
+  </div>
+  <pre> <p>Since 1995 we are covered and ATOL insured company involved in travel & tours activities.
+                                                    ATOL# TRA9711066</p> </pre>
+  <p>&copy; 2023 Travel Website. All Rights Reserved.</p>
+</footer>
+
+
+<script>
+  const readMoreBtn = document.getElementById("readMoreBtn");
+  const readLessBtn = document.getElementById("readLessBtn");
+  const extraContent = document.getElementById("extraContent");
+
+  readMoreBtn.addEventListener("click", function() {
+    extraContent.style.display = "block";
+    readMoreBtn.style.display = "none";
+    readLessBtn.style.display = "inline";
+  });
+
+  readLessBtn.addEventListener("click", function() {
+    extraContent.style.display = "none";
+    readMoreBtn.style.display = "inline";
+    readLessBtn.style.display = "none";
+  });
+</script>
+
+</body>
+<script
+    src="https://kit.fontawesome.com/6558443b63.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
